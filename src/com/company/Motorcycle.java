@@ -39,6 +39,20 @@ public class Motorcycle {
         System.out.println("--------------------------");
         System.out.println("Starting engine...");
         motor.startEngine();
+        Motorcycle motor2 = new Motorcycle();
+        motor2.model = "Honda";
+        motor2.color = "Blue";
+        motor2.startEngine();
+        System.out.println("Calling showAtts");
+        System.out.println("----------------------------");
+        System.out.println("starting engine");
+        motor2.startEngine();
+        System.out.println("-----------------------------");
+        System.out.println("Calling showAtts");
+        motor2.showAtts();
+        System.out.println("-----------------------------");
+        System.out.println("Starting engine");
+        motor2.startEngine();
     }
 
 }
